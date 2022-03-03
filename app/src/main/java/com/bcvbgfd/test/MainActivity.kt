@@ -1,6 +1,7 @@
 package com.bcvbgfd.test
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.annotation.DrawableRes
 import androidx.appcompat.app.AppCompatActivity
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding.slots.init(listOfImages) {
-            Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
+            Log.e("Slots", "win = $it")
         }
         binding.spinButton.setOnClickListener {
             binding.slots.startSpin()
