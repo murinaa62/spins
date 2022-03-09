@@ -2,7 +2,7 @@ Implementation
 
    Dependency
     
-    implementation 'com.github.murinaa62:spins:1.0.2' 
+    implementation 'com.github.murinaa62:spins:1.0.3' 
  
    Add it in your root build.gradle at the end of repositories:
    
