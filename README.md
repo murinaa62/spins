@@ -40,6 +40,7 @@ Implementation
         R.drawable.q01,
         R.drawable.q02
     )
+     private lateinit var player: Player
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,7 +55,7 @@ Implementation
         //make some amazing animation
     }
     private fun observeState() {
-        val player = binding.slots.player
+        player = binding.slotsRecycler.player
         player.currentMoney.mapLatest {
             Log.e("Player", "currentMoney = $it")
         }.launchIn(lifecycleScope)
