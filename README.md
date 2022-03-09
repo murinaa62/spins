@@ -97,7 +97,9 @@ Implementation
         SpinResult.LOOSE to 0
     )
    
+   Look sample at 
    
+   	https://gitlab.com/piratess/white/casinolibrarysample
    
     
    
